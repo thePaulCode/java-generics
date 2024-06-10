@@ -18,6 +18,8 @@ public class GenericMethodDemo {
         Integer nums3[] = {1, 2, 7, 4, 5};
         Integer nums4[] = {1, 2, 7, 4, 5, 6};
 
+        // Note: Os argumentos de tipo T e V sao determinados
+        // implicitamento quando o metodo e chamado
         if(arraysEqual(nums, nums))
             System.out.println("\n\tnums equals nums");
 
@@ -26,7 +28,10 @@ public class GenericMethodDemo {
 
         if(arraysEqual(nums, nums4))
             System.out.println("\n\tnums equals nums4");
-
+        
+        /* Note: Essa parte nao sera compilada, porque
+        * nums e dValue nao sao do mesmo tipo
+        */
         // Cria um array de Double
 //        Double dValue[] = {1.1, 2.2, 3.3, 4.4 };
 //        if(arraysEqual(nums, dValue))
